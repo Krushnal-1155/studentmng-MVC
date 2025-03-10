@@ -24,7 +24,7 @@ h1 {
 }
 
 p {
-    font-size: 35px; /* Increased font size for better readability */
+    font-size: 30px; /* Increased font size for better readability */
     line-height: 1.8; /* Increased line height for spacing */
     color: white; /* Set text color to white for visibility */
     text-align: center;
@@ -97,7 +97,7 @@ a:hover {
 
     <!-- Adding an image -->
    <div class="neon-container">
-    <img class="neon-image" src="https://img.freepik.com/premium-vector/cartoon-character-with-jacket-black-background_608506-11849.jpg"
+    <img class="neon-image" src="https://s.tmimgcdn.com/scr/1200x750/419000/i-3d-character-boy-web-developer-med-relevant-miljo-1_419093-original.jpg"
         alt="Student Management System">
 </div>
 

@@ -82,6 +82,38 @@
         flex-direction: column;
         color: white;
     }
+    /* Default Neon Border Animation */
+@keyframes neonBorder {
+    0% { border: 5px solid #0ff; box-shadow: 0 0 10px #0ff, 0 0 20px #0ff; }
+    50% { border: 5px solid #0ff; box-shadow: 0 0 15px #0ff, 0 0 30px #0ff; }
+    100% { border: 5px solid #0ff; box-shadow: 0 0 10px #0ff, 0 0 20px #0ff; }
+}
+
+/* High Neon Glow When Clicked */
+@keyframes neonClickEffect {
+    0% { border: 5px solid #0ff; box-shadow: 0 0 25px #0ff, 0 0 50px #0ff; }
+    50% { border: 5px solid #0ff; box-shadow: 0 0 35px #0ff, 0 0 70px #0ff; }
+    100% { border: 5px solid #0ff; box-shadow: 0 0 25px #0ff, 0 0 50px #0ff; }
+}
+
+/* Apply Default Neon Animation */
+form {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    animation: neonBorder 2s linear infinite;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Activate High Neon Glow on Click */
+form:active {
+    animation: neonClickEffect 0.5s infinite alternate ease-in-out;
+}
+    
 
     input[type="text"] {
         padding: 10px;

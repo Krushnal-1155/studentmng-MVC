@@ -41,39 +41,57 @@ keyframes borderAnimation { 0% {
 50
 
 
+
+
 %
 {
 border-color
 
 
+
+
 :
+
+
 
 
 #ff9800
+
+
 ;
-
-
 box-shadow
+
+
 
 
 :
 
 
-0
 
 
 0
+
+
+
+
+0
+
+
 
 
 15px
 
 
+
+
 #ff9800
+
+
 ;
-
-
 }
 100
+
+
 
 
 %
@@ -81,32 +99,46 @@ box-shadow
 border-color
 
 
+
+
 :
+
+
 
 
 #e91e63
+
+
 ;
-
-
 box-shadow
+
+
 
 
 :
 
 
-0
 
 
 0
+
+
+
+
+0
+
+
 
 
 10px
 
 
+
+
 #e91e63
+
+
 ;
-
-
 }
 }
 th, td {
@@ -145,23 +177,22 @@ button:hover {
 }
 
 .logout-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff4c4c; /* Red background */
-    color: white; /* White text */
-    text-decoration: none; /* Remove default underline */
-    border-radius: 5px; /* Rounded edges */
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-    border: 2px solid transparent;
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #ff4c4c; /* Red background */
+	color: white; /* White text */
+	text-decoration: none; /* Remove default underline */
+	border-radius: 5px; /* Rounded edges */
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+	border: 2px solid transparent;
 }
 
 .logout-button:hover {
-    background-color: #cc0000; /* Darker red on hover */
-    transform: scale(1.1); /* Slight zoom effect */
-    border: 2px solid white; /* White border on hover */
+	background-color: #cc0000; /* Darker red on hover */
+	transform: scale(1.1); /* Slight zoom effect */
+	border: 2px solid white; /* White border on hover */
 }
-
 </style>
 
 
@@ -220,6 +251,19 @@ button:hover {
 					<td><%=stu.getPassword()%></td>
 					<td><button type="button" onclick="editFunc()">Edit</button></td>
 					<td><button type="button" onclick="deleteFunc()">Delete</button></td>
+
+					<script>
+						function deleteFunc() {
+							let confirmDelete = confirm("Are you sure you want to delete this?");
+							if (confirmDelete) {
+								// Proceed with deletion logic here
+								alert("Item deleted successfully!");
+							} else {
+								alert("Deletion cancelled.");
+							}
+						}
+					</script>
+
 				</tr>
 				<%
 				}

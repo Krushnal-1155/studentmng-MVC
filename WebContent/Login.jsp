@@ -10,7 +10,8 @@
 body {
 	font-family: Arial, sans-serif;
 	background-image:
-		url('https://cdn.vectorstock.com/i/500p/15/71/abstract-3d-luxury-black-color-wave-lines-vector-43391571.jpg'); /* Background image added */
+		url('https://cdn.vectorstock.com/i/500p/15/71/abstract-3d-luxury-black-color-wave-lines-vector-43391571.jpg');
+	/* Background image added */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -38,38 +39,120 @@ body {
 	align-items: center;
 }
 
-@keyframes neonBlink {
-    0% { border: 5px solid #0ff; box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff; }
-    50% { border: 5px solid red; box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red; }
-    100% { border: 5px solid #0ff; box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff; }
+@
+keyframes neonBlink { 0% {
+	border: 5px solid #0ff;
+	box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
 }
 
+50
+%
+{
+border
+:
+5px
+solid
+red;
+box-shadow
+:
+0
+0
+10px
+red
+,
+0
+0
+20px
+red
+,
+0
+0
+30px
+red;
+}
+100
+%
+{
+border
+:
+5px
+solid
+#0ff;
+box-shadow
+:
+0
+0
+10px
+#0ff
+,
+0
+0
+20px
+#0ff
+,
+0
+0
+30px
+#0ff;
+}
+}
 .image-container img {
     width: 400px; /* Adjust width as needed */
     height: auto;
     border-radius: 10px;
-    border: 5px solid #0ff; /* Initial neon cyan border */
-    box-shadow: 0 0 10px #0ff;
-    animation: neonBlink 1.5s infinite alternate ease-in-out; /* Loop animation */
+    border: 5px solid #ff0000; /* Initial border color */
+    box-shadow: 0 0 15px #ff0000;
+    animation: neonBlink 3s linear infinite;
+    /* Loop animation */
     transition: all 0.4s ease-in-out;
 }
 
+/* Multicolor loop transition */
+@keyframes neonBlink {
+    0% {
+        border-color: #ff0000;
+        box-shadow: 0 0 15px #ff0000;
+    }
+    20% {
+        border-color: #00ff00;
+        box-shadow: 0 0 20px #00ff00;
+    }
+    40% {
+        border-color: #0000ff;
+        box-shadow: 0 0 20px #0000ff;
+    }
+    60% {
+        border-color: #ff00ff;
+        box-shadow: 0 0 20px #ff00ff;
+    }
+    80% {
+        border-color: #ffff00;
+        box-shadow: 0 0 20px #ffff00;
+    }
+    100% {
+        border-color: #ff0000;
+        box-shadow: 0 0 15px #ff0000;
+    }
+}
+
+}
 
 .form-container form {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
-    padding: 20px;
-    border-radius: 10px;
-    border: 5px solid transparent; /* Initially no border */
-    box-shadow: 0 0 10px transparent;
-    transition: border 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth transition */
+	background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+	padding: 20px;
+	border-radius: 10px;
+	border: 5px solid transparent; /* Initially no border */
+	box-shadow: 0 0 10px transparent;
+	transition: border 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+	/* Smooth transition */
 }
 
 /* Neon effect on hover */
 .form-container form:hover {
-    border: 5px solid #0ff; /* Neon cyan border */
-    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #00f, 0 0 50px #00f;
+	border: 5px solid #0ff; /* Neon cyan border */
+	box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #00f,
+		0 0 50px #00f;
 }
-
 
 h1 {
 	color: white; /* Changed to white for better visibility */
@@ -142,76 +225,128 @@ p {
 	font-size: 16px;
 }
 
-@keyframes neonGlowLoop {
-    0% { box-shadow: 0 0 5px #0ff, 0 0 10px #0ff; }
-    50% { box-shadow: 0 0 10px #0ff, 0 0 20px #00f, 0 0 30px #00f; }
-    100% { box-shadow: 0 0 5px #0ff, 0 0 10px #0ff; }
+@
+keyframes neonGlowLoop { 0% {
+	box-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
 }
 
+50
+%
+{
+box-shadow
+:
+0
+0
+10px
+#0ff
+,
+0
+0
+20px
+#00f
+,
+0
+0
+30px
+#00f;
+}
+100
+%
+{
+box-shadow
+:
+0
+0
+5px
+#0ff
+,
+0
+0
+10px
+#0ff;
+}
+}
 .form-container form {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
-    padding: 20px;
-    border-radius: 10px;
-    border: 5px solid #0ff; /* Neon cyan border */
-    box-shadow: 0 0 10px #0ff;
-    animation: neonGlowLoop 1.5s infinite alternate ease-in-out; /* Looping animation */
-    transition: all 0.4s ease-in-out;
+	background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+	padding: 20px;
+	border-radius: 10px;
+	border: 5px solid #0ff; /* Neon cyan border */
+	box-shadow: 0 0 10px #0ff;
+	animation: neonGlowLoop 1.5s infinite alternate ease-in-out;
+	/* Looping animation */
+	transition: all 0.4s ease-in-out;
 }
-
-
 </style>
 <!-- This is Javascript to add CAPTCHA code in the login page -->
 <script type="text/javascript">
-let captchaCode;
+	let captchaCode;
 
-function generateCaptcha() {
-    const characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-    captchaCode = '';
-    for (let i = 0; i < 6; i++) {
-    	const randomIndex = Math.floor(Math.random() * characters.length);
-        captchaCode += characters.charAt(randomIndex); 
-    }
-    document.getElementById("captcha").innerText = captchaCode;
-}
+	function generateCaptcha() {
+		const characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+		captchaCode = '';
+		for (let i = 0; i < 6; i++) {
+			const randomIndex = Math.floor(Math.random() * characters.length);
+			captchaCode += characters.charAt(randomIndex);
+		}
+		document.getElementById("captcha").innerText = captchaCode;
+	}
 
-function validateCaptcha() {
-    const userCaptchaInput = document.getElementById("captcha_input").value;
-    if (userCaptchaInput !== captchaCode) {
-        alert("Incorrect CAPTCHA. Please try again.");
-        return false;
-    }
-    return true;
-}
-window.onload = generateCaptcha;
+	function validateCaptcha() {
+		const userCaptchaInput = document.getElementById("captcha_input").value;
+		if (userCaptchaInput !== captchaCode) {
+			alert("Incorrect CAPTCHA. Please try again.");
+			return false;
+		}
+		return true;
+	}
+	window.onload = generateCaptcha;
 </script>
 </head>
 <body>
 
-<div class="container">
-    <!-- Image on the left -->
-    <div class="image-container">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw9Zut5tZj3pmyu8HPG2qj5QV7y9dHCzPlrg&s" 
-        alt="Student Login">
-    </div>
-</div>
+	<div class="container">
+		<!-- Image on the left -->
+		<div class="image-container">
+			<img
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw9Zut5tZj3pmyu8HPG2qj5QV7y9dHCzPlrg&s"
+				alt="Student Login">
+		</div>
+	</div>
 
 
-    <!-- Login Form on the right -->
-    <div class="form-container"> 
-    <h1>Welcome To Student Login Page</h1>
-    <form action="log" method="post" onsubmit="return validateCaptcha()">
-        <input type="text" name="rollNo" placeholder="Enter Your Roll Number" required>
-        <input type="text" name="login" placeholder="Email or Mobile Number" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <div class="captcha-container">
-            <span id="captcha" class="captcha"></span>
-            <input type="text" id="captcha_input" placeholder="Enter CAPTCHA" required>
-        </div>
-        <input type="submit" value="Login">
-        <div class="message">${msg}</div>
-    </form>
-    <p>Not registered? <a href="Register.jsp">Register here</a></p> 
-</div>
+	<!-- Login Form on the right -->
+	<div class="form-container">
+		<h1>Student Login Page</h1>
+		<form action="log" method="post" onsubmit="return validateCaptcha()">
+			<input type="text" name="rollNo" placeholder="Enter Your Roll Number"
+				required> <input type="text" name="login"
+				placeholder="Email or Mobile Number" required> <input
+				type="password" name="password" placeholder="Password" required>
+
+			<!-- Forgot Password Link -->
+			<p style="text-align: right; margin: 5px 0;">
+				<a href="forgotpassword.jsp">Forgot Password?</a>
+			</p>
+			<script>
+				function goToLogin() {
+					window.location.href = "Login.jsp";
+				}
+			</script>
+
+
+			<div class="captcha-container">
+				<span id="captcha" class="captcha"></span> <input type="text"
+					id="captcha_input" placeholder="Enter CAPTCHA" required>
+			</div>
+
+			<input type="submit" value="Login">
+			<div class="message">${msg}</div>
+		</form>
+
+		<p>
+			Not registered? <a href="Register.jsp">Register here</a>
+		</p>
+	</div>
 
 </body>
 </html>
